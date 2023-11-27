@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="background"></div>
+
+<div class="binary-rain">
+    <!-- JavaScript zal hier dynamisch bits toevoegen -->
+</div>
+
+<script>
+    const binaryRain = document.querySelector('.binary-rain');
+
+    function createBinaryBit() {
+        const bit = document.createElement('div');
+        bit.classList.add('binary-bit');
+        bit.textContent = Math.random() < 0.5 ? '0' : '1';
+        bit.style.left = `${Math.random() * 100}vw`;
+        bit.style.fontSize = `${10 + Math.random() * 20}px`; // Set font size dynamically
+        binaryRain.appendChild(bit);
+    }
+
+    // Add constant bits with random sizes
+    setInterval(createBinaryBit, 10);
+</script>
+
+<header>
+    <h1>Ike Marcus</h1>
+    <p>Developer</p>
+</header>
+
+<section>
+    <h2>Ontdek het verhaal achter mijn werk</h2>
+    <p>Mijn creaties in de frontend zijn niet slechts kunstwerken; ze vormen een codering van mijn identiteit. Als ontwikkelaar streef ik naar indrukwekkende oplossingen, prikkel ik de gebruikerservaring en vertel ik mijn verhaal door middel van mijn code.</p>
+    <p>Elk project bevat code, structuren en interacties die niet alleen esthetisch aantrekkelijk zijn, maar ook een diepere functionele betekenis hebben. Mijn code is een uitdrukking van mijn unieke benadering, een weerspiegeling van mijn gedachten en technische emoties.</p>
+    <p>Welkom in mijn digitale ontwikkelomgeving, waar grootsheid en individualiteit samenkomen in een unieke en betekenisvolle gebruikerservaring.</p>
+</section>
+
+<footer>
+    <p>&copy; 2023 Ike Marcus - Developer. Alle rechten voorbehouden.</p>
+</footer>
+
+</body>
+</html>
