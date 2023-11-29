@@ -63,9 +63,10 @@ footer {
 .binary-bit {
     position: absolute;
     line-height: 20px;
-    color: rgba(0, 128, 0, 0.6);
+    color: seagreen;
     animation: binaryBitAnimation 7s linear infinite;
 }
+
 @keyframes binaryBitAnimation {
     0% {
         transform: translateY(0);
@@ -74,3 +75,4 @@ footer {
         transform: translateY(100vh);
     }
 }
+

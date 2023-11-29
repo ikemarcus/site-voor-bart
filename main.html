@@ -23,11 +23,12 @@
         bit.classList.add('binary-bit');
         bit.textContent = Math.random() < 0.5 ? '0' : '1';
         bit.style.left = `${Math.random() * 100}vw`;
-        bit.style.fontSize = `${10 + Math.random() * 20}px`; // Set font size dynamically
+        bit.style.fontSize = `${10 + Math.random() * 20}px`;
+        bit.style.opacity = Math.random(); // Set random opacity
         binaryRain.appendChild(bit);
     }
 
-    // Add constant bits with random sizes
+    // Add constant bits with random sizes and opacities
     setInterval(createBinaryBit, 250);
 </script>
 
