@@ -63,7 +63,7 @@ footer {
 .binary-bit {
     position: absolute;
     line-height: 20px;
-    color: seagreen;
+    color: green;
     animation: binaryBitAnimation 7s linear infinite;
 }
 
